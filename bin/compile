@@ -7,10 +7,10 @@ CACHE_DIR=$2
 
 # config
 VERSION="1.9.0"
-S3_BUCKET="stomita-buildpack-phantomjs"
+#S3_BUCKET=... (read from env)
 
 # s3 packages
-FILE_NAME="buildpack-phantomjs-${VERSION}.tar.gz"
+FILE_NAME="tools/buildpack-phantomjs-${VERSION}.tar.gz"
 BUILDPACK_PHANTOMJS_PACKAGE="http://${S3_BUCKET}.s3.amazonaws.com/${FILE_NAME}"
 
 mkdir -p $CACHE_DIR
